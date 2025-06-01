@@ -13,3 +13,4 @@ jobs:
       - uses: dvjn/wakatime-charts@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          BRANCH_NAME: output
