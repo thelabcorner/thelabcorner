@@ -17,3 +17,6 @@ jobs:
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           BRANCH_NAME: output
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
