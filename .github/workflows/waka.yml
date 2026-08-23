@@ -11,7 +11,8 @@ on:
 jobs:
   update-charts:
     name: Update wakatime stats charts
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, personal-pool, homelab]
+    if: github.repository == 'thelabcorner/thelabcorner'
     steps:
       - uses: dvjn/wakatime-charts@master
         with:
