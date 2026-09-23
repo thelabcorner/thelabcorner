@@ -6,7 +6,7 @@
 
 I build systems across **software, AI infrastructure, graphics, scientific computing, process engineering, and design**.
 
-My work tends to begin the same way: understand the mechanism, instrument it, build a model, measure what matters, then iterate until the system is meaningfully better.
+My work usually starts the same way: understand the mechanism, make the model explicit, instrument the real system, then iterate until the result is measurably better.
 
 <br />
 
@@ -18,19 +18,15 @@ My work tends to begin the same way: understand the mechanism, instrument it, bu
 
 ---
 
-## I engineer across boundaries
+## Background
 
-I am an independent, self-taught engineer based in St. Louis.
+I started programming around **12 years old**, building Minecraft servers, mods, and Java plugins. Bukkit, Spigot, and Paper were my first real engineering environment: event-driven systems, schedulers, persistence, permissions, APIs, JVM behavior, profiling, and performance under real users.
 
-I did not arrive here through one discipline. I learned by solving problems that forced me underneath the abstraction.
+That work never really stopped. More recent Minecraft projects include [GeyserCommandsYML](https://github.com/thelabcorner/GeyserCommandsYML), while the systems thinking I learned there eventually expanded far beyond game servers.
 
-A presentation editor became browser rendering and computational geometry.  
-AI tooling became concurrency, authority, persistence, IPC, and distributed state.  
-Packaging became deterministic vector geometry.  
-A freeze dryer became thermodynamics, vacuum physics, firmware, and control theory.  
-Crystallization became instrumentation, transport phenomena, and process optimization.
+I did **not attend college and do not have a degree**. My education has been self-directed through source code, documentation, research papers, experiments, reverse engineering, benchmarking, and years of building systems that had to actually work.
 
-That is the common thread in my work.
+I tend to think across abstraction layers. Technical language is not decoration to me. Terms imply mechanisms, contracts, invariants, and failure modes, and I usually keep descending until those are explicit enough to build against.
 
 ```mermaid
 flowchart LR
@@ -62,16 +58,14 @@ flowchart LR
 
 # Selected work
 
-### OpenFork
-**A desktop-first AI development environment built from OpenCode.**
+### [OpenFork](https://github.com/thelabcorner/openfork)
+**Desktop-first AI development environment built from OpenCode.**
 
-[github.com/thelabcorner/openfork](https://github.com/thelabcorner/openfork)
-
-One of my largest systems projects. I work across the application stack, including:
+One of my largest systems projects. I work across the application stack:
 
 `agent tooling` · `concurrent sessions` · `server projections` · `SQLite` · `Electron` · `browser automation` · `usage accounting` · `model routing` · `mobile/PWA` · `performance`
 
-I have also developed a substantial first-party agent tool surface:
+I have also developed a substantial first-party tool surface inside [OpenFork](https://github.com/thelabcorner/openfork):
 
 `project` · `symbols` · `test` · `typecheck` · `refactor` · `patch` · `background` · `swarm` · `browser` · `checkpoint` · `Git` · `SQLite` · `SymPy`
 
@@ -80,7 +74,7 @@ Performance work is benchmarked against real workloads, including large historie
 ---
 
 ### AI capability infrastructure
-**OXP · getMCP · localMCP-chat · openswarm**
+**[OXP](https://github.com/thelabcorner/openfork) · [getMCP](https://github.com/thelabcorner/getMCP) · [localMCP-chat](https://github.com/thelabcorner/localMCP-chat) · [openswarm](https://github.com/thelabcorner/openswarm)**
 
 A continuing body of work around giving AI systems powerful local capabilities without giving them uncontrolled authority.
 
@@ -95,7 +89,7 @@ flowchart LR
     C --> H["Delegation"]
 ```
 
-This includes:
+Across [OXP](https://github.com/thelabcorner/openfork), [getMCP](https://github.com/thelabcorner/getMCP), [localMCP-chat](https://github.com/thelabcorner/localMCP-chat), and [openswarm](https://github.com/thelabcorner/openswarm), the recurring problems are:
 
 - scoped filesystem authority
 - replay-safe mutations
@@ -108,54 +102,49 @@ This includes:
 - permission propagation
 - external tool aggregation
 
-**getMCP** even explores a transport where an agent capable only of reading URLs can still operate a controlled coding environment, with the URL itself acting as the RPC surface.
+[getMCP](https://github.com/thelabcorner/getMCP) even explores a transport where an agent capable only of reading URLs can operate a controlled coding environment, with the URL itself acting as the RPC surface.
 
 ---
 
-### PresGen
+### [PresGen](https://presgen.io)
 **Creative software for technical communication.**
 
-[presgen.io](https://presgen.io)
+I founded [PresGen](https://presgen.io) to explore what presentation software looks like when treated as a serious creative engineering environment.
 
-I founded PresGen to explore what presentation software looks like when treated as a serious creative engineering environment.
-
-It combines ideas from Illustrator, motion software, scientific visualization, and traditional presentation tools.
-
-Work includes:
+It combines ideas from Illustrator, motion software, scientific visualization, and traditional presentation tools:
 
 `vector editing` · `animation` · `rich text` · `LaTeX` · `graphing` · `chemistry` · `SVG` · `PDF` · `PPTX` · `Electron`
 
-PresGen has also produced several deeper engineering projects, including **ForgePrint**, a browser-native engine that converts the live DOM and CSSOM into semantic PDF primitives instead of rasterizing the page.
+That work has also produced deeper systems such as [ForgePrint](https://github.com/thelabcorner/forgeprint), a browser-native engine that converts the live DOM and CSSOM into semantic PDF primitives instead of rasterizing the page.
 
 ---
 
 ### Adobe Illustrator engineering
-**ArcFit · ESPACK · ESON · ESB64 · ESHTTP · ESARR · ESSTR · ESTIMER**
-
-[arcfit.dev](https://arcfit.dev)
+**[ArcFit](https://arcfit.dev) · [ESPACK](https://github.com/thelabcorner/espack) · [ESON](https://github.com/thelabcorner/eson) · [ESB64](https://github.com/thelabcorner/es-b64) · [ESHTTP](https://github.com/thelabcorner/es-http) · [ESARR](https://github.com/thelabcorner/es-arr) · [ESSTR](https://github.com/thelabcorner/es-str) · [ESTIMER](https://github.com/thelabcorner/es-timer) · [ESCHARS](https://github.com/thelabcorner/es-chars)**
 
 Working deeply with Illustrator exposed two classes of problems.
 
-First, packaging geometry. **ArcFit** provides deterministic artwork warping based on the physical dieline instead of unreliable hidden or clipped Illustrator geometry.
+First, packaging geometry. [ArcFit](https://arcfit.dev) provides deterministic artwork warping based on the physical dieline instead of unreliable hidden or clipped Illustrator geometry.
 
-Second, the ExtendScript runtime itself. Adobe's ES3 environment lacks much of the modern JavaScript platform, so I built the infrastructure I wanted to have:
+Second, the ExtendScript runtime itself. Adobe's ES3 environment lacks much of the modern JavaScript platform, so I built the infrastructure I wanted to have.
 
 | Project | Purpose |
 | --- | --- |
-| **ESON** | Strict JSON |
-| **ESB64** | Base64 and UTF-8 |
-| **ESHTTP** | HTTP transport |
-| **ESTIMER** | High-resolution timing |
-| **ESPACK** | Self-extracting native `ExternalObject` bundles |
-| **ESARR / ESSTR** | Runtime compatibility primitives |
+| [**ESON**](https://github.com/thelabcorner/eson) | Strict JSON |
+| [**ESB64**](https://github.com/thelabcorner/es-b64) | Base64 and UTF-8 |
+| [**ESHTTP**](https://github.com/thelabcorner/es-http) | HTTP transport |
+| [**ESTIMER**](https://github.com/thelabcorner/es-timer) | High-resolution timing |
+| [**ESPACK**](https://github.com/thelabcorner/espack) | Self-extracting native `ExternalObject` bundles |
+| [**ESARR**](https://github.com/thelabcorner/es-arr) / [**ESSTR**](https://github.com/thelabcorner/es-str) | Runtime compatibility primitives |
+| [**ESCHARS**](https://github.com/thelabcorner/es-chars) | Accelerated bulk character operations |
 
-The work includes native acceleration, differential fuzzing, browser conformance tests, binary packaging, and live-engine benchmarking.
+The work includes native acceleration, differential fuzzing, browser conformance tests, binary packaging, reverse engineering, and live-engine benchmarking.
 
 ---
 
 ### Scientific & process engineering
 
-Before software became my dominant engineering medium, much of my work centered on physical systems.
+Software has been part of my life since childhood. Later, I began applying the same systems mindset to physical processes.
 
 #### Crystallization
 
@@ -167,31 +156,25 @@ That work contributed to a reported **44% improvement in process efficiency** ac
 
 #### Freeze-dryer reverse engineering
 
-I also spent years investigating freeze drying from first principles.
-
-What started as understanding a machine expanded into:
+A long-running investigation into freeze drying expanded into:
 
 `thermodynamics` · `vacuum physics` · `gas conduction` · `heat transfer` · `Pirani sensing` · `firmware` · `refrigeration` · `control systems`
 
 I reverse-engineered commercial firmware and developed models around pressure-dependent thermal transport inside the vacuum chamber.
 
-The most important insight was simple: **residual chamber gas is not merely something to remove. In the relevant pressure regime, it is part of the heat-transfer system.**
+The key insight was simple: **residual chamber gas is not merely something to remove. In the relevant pressure regime, it is part of the heat-transfer system.**
 
 ---
 
 ### Research projects
 
-**CIDARTHA**  
+[**CIDARTHA**](https://github.com/thelabcorner/CIDARTHA)  
 High-performance CIDR membership infrastructure using native C, compiled data planes, adaptive representations, packed operations, and SIMD-assisted search.
 
-[github.com/thelabcorner/CIDARTHA](https://github.com/thelabcorner/CIDARTHA)
+[**Project ANVIL**](https://github.com/thelabcorner/anvil)  
+Experimental lossless-compression research focused on the compression, encode, decode, and memory Pareto frontier.
 
-**Project ANVIL**  
-Experimental lossless compression research focused on the compression, encode, decode, and memory Pareto frontier.
-
-[github.com/thelabcorner/anvil](https://github.com/thelabcorner/anvil)
-
-One rule drives ANVIL:
+One rule drives [Project ANVIL](https://github.com/thelabcorner/anvil):
 
 > **A ratio win is not a codec win.**
 
@@ -199,9 +182,11 @@ Failed mechanisms stay in the research record instead of being rewritten as succ
 
 ---
 
-## Engineering methodology
+## How I work
 
-I care about performance, but not optimization theater.
+I am deliberate about semantics, architecture, and evidence.
+
+A vague requirement usually becomes a set of explicit invariants before I implement it. A performance claim becomes a benchmark. A surprising behavior becomes an experiment. A failed idea becomes part of the research record.
 
 ```mermaid
 flowchart LR
@@ -225,7 +210,7 @@ I usually look for architectural wins before micro-optimizations:
 - benchmark the real bottleneck
 - test under contention
 - measure secondary costs
-- preserve failed experiments so they are not rediscovered
+- preserve negative results so they are not rediscovered
 
 ---
 
@@ -233,9 +218,9 @@ I usually look for architectural wins before micro-optimizations:
 
 | | |
 | --- | --- |
-| **Founder & Full-Stack Engineer** | **PresGen** · creative software, rendering, document engineering |
-| **Full-Stack Developer & Administrator** | **Engineering Minds** · STEM infrastructure, automation, community systems |
-| **Founder** | **TheDabCorner™ LLC** · engineering, packaging, software, design |
+| **Founder & Full-Stack Engineer** | [**PresGen**](https://presgen.io) · creative software, rendering, document engineering |
+| **Full-Stack Developer & Administrator** | [**Engineering Minds**](https://engineeringminds.co) · STEM infrastructure, automation, community systems |
+| **Founder** | [**TheDabCorner™ LLC**](https://thedabcorner.site) · engineering, packaging, software, design |
 | **Process Engineering Lead** | **Carboxyl Manufacturing** · crystallization, R&D, instrumentation, process optimization |
 
 ---
@@ -260,6 +245,6 @@ I usually look for architectural wins before micro-optimizations:
 
 ### Understand the mechanism. Build the model. Measure what matters.
 
-[Portfolio](https://thedabcorner.site) · [PresGen](https://presgen.io) · [Engineering Minds](https://engineeringminds.co)
+[Portfolio](https://thedabcorner.site) · [PresGen](https://presgen.io) · [Engineering Minds](https://engineeringminds.co) · [Repositories](https://github.com/thelabcorner?tab=repositories)
 
 </div>
