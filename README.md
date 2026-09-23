@@ -48,7 +48,7 @@ flowchart LR
 | Field | Focus |
 | --- | --- |
 | **Software & systems** | Desktop applications, runtimes, IPC, persistence, concurrency, protocols, developer tooling |
-| **AI infrastructure** | Agent systems, MCP, OXP, tool design, orchestration, permissions, context, multi-agent workflows |
+| **AI infrastructure** | Agent systems, MCP, [OXP](https://github.com/thelabcorner/openfork), tool design, orchestration, permissions, context, multi-agent workflows |
 | **Performance** | Profiling, benchmarking, hot-path redesign, bounded concurrency, caching, data structures |
 | **Graphics & documents** | Vector geometry, SVG, PDF, PPTX, browser rendering, semantic document generation |
 | **Scientific engineering** | Crystallization, lyophilization, vacuum systems, heat transfer, instrumentation, process control |
