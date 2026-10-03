@@ -26,6 +26,8 @@ Minecraft was also where I first learned the product side of software: **build s
 
 In **2025**, I returned to that space with [NeON](https://www.spigotmc.org/resources/%E2%9C%A8neon.124719/), a modern Paper join/leave system where I was experimenting with animated player holograms, MiniMessage/HEX styling, particles, fireworks, sounds, titles, action bars, and boss bars. What started as childhood plugin development became one of my earliest real feedback loops for shipping software to strangers, watching what they used, and iterating toward **utility and delight**.
 
+I also ran public Minecraft servers and communities of my own. One of them, **Comet FreeBuild**, is long defunct, but a few time capsules are still online: the old [server website](https://worldeditsatan.wixsite.com/comet), its [Planet Minecraft listing](https://www.planetminecraft.com/server/comet-freebuild-1-16-1-ranks-worldedit-automatic-grief-protection/), and an old [server video](https://www.youtube.com/watch?v=XfDRljaJuqU). Building and operating servers gave me an early taste of the full product loop: infrastructure, custom plugins, moderation, community design, presentation, and keeping something running for real users.
+
 I did **not attend college and do not have a degree**. My education has been self-directed through source code, documentation, research papers, experiments, reverse engineering, benchmarking, and years of building systems that had to actually work.
 
 I tend to think across abstraction layers. Technical language is not decoration to me. Terms imply mechanisms, contracts, invariants, and failure modes, and I usually keep descending until those are explicit enough to build against.
