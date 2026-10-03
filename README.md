@@ -22,7 +22,9 @@ My work usually starts the same way: understand the mechanism, make the model ex
 
 I started programming around **12 years old**, building Minecraft servers, mods, and Java plugins. Bukkit, Spigot, and Paper were my first real engineering environment: event-driven systems, schedulers, persistence, permissions, APIs, JVM behavior, profiling, and performance under real users.
 
-That work never really stopped. More recent Minecraft projects include [GeyserCommandsYML](https://github.com/thelabcorner/GeyserCommandsYML), while the systems thinking I learned there eventually expanded far beyond game servers.
+Minecraft was also where I first learned the product side of software: **build something people need, then make it something they actually want to use.** Under the name [FrostyShotz](https://www.spigotmc.org/resources/authors/frostyshotz.145337/), I published plugins used by server owners around the world. [CometWelcome](https://www.spigotmc.org/resources/%E2%98%84%EF%B8%8F-cometwelcome-%E2%98%84%EF%B8%8F-motd%E2%9C%A8-join-sounds%E2%9C%85-welcome-command%E2%9B%8F%EF%B8%8F-%E2%AD%90join-fireworks%E2%AD%90-%E2%9A%A1auto-center-messages%E2%9A%A1.88264/) passed **11,000 downloads**.
+
+In **2025**, I returned to that space with [NeON](https://www.spigotmc.org/resources/%E2%9C%A8neon.124719/), a modern Paper join/leave system where I was experimenting with animated player holograms, MiniMessage/HEX styling, particles, fireworks, sounds, titles, action bars, and boss bars. Other recent Minecraft work includes [GeyserCommandsYML](https://github.com/thelabcorner/GeyserCommandsYML). What started as childhood plugin development became one of my earliest real feedback loops for shipping software to strangers, watching what they used, and iterating toward **utility and delight**.
 
 I did **not attend college and do not have a degree**. My education has been self-directed through source code, documentation, research papers, experiments, reverse engineering, benchmarking, and years of building systems that had to actually work.
 
